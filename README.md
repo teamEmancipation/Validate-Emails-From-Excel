@@ -7,3 +7,5 @@ Features:
 <li> Resume Capability (If any error occurs). </li>
 <li> Gives separate .txt Files for Valid Emails and Invalid Emails. </li>
 <li> Bulk Email Validator for Free. </li>
+<li> Progress Bar shows percentage for Emails Processed. </li>
+<li> Duplicate Emails Automatically gets Skipped. </li>
