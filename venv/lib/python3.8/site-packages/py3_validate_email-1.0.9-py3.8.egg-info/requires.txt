@@ -1,0 +1,4 @@
+dnspython~=2.2
+idna~=3.3
+filelock~=3.7
+typing_extensions~=4.4
