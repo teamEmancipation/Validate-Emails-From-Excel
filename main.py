@@ -39,7 +39,17 @@ def validate_emails(filename):
                     continue
                 
                 # Validate the email address
-                is_valid = validate_email(email_address=email,check_format=True,check_blacklist=True,check_dns=True,dns_timeout=10,check_smtp=True,smtp_timeout=10,smtp_helo_host='my.host.name',smtp_from_address='admin@emancipation.co.in',smtp_skip_tls=False,smtp_tls_context=None,smtp_debug=False)
+                is_valid = validate_email(email_address=email,
+                                          check_format=True,
+                                          check_blacklist=True,
+                                          check_dns=True,dns_timeout=10,
+                                          check_smtp=True,
+                                          smtp_timeout=10,
+                                          smtp_helo_host='my.host.name',
+                                          smtp_from_address='admin@emancipation.co.in',
+                                          smtp_skip_tls=False,
+                                          smtp_tls_context=None,
+                                          smtp_debug=False)
                 if is_valid:
                     # Write the name and email to the valid file
                     valid_file.write(f"{name},{email}\n")
