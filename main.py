@@ -11,7 +11,7 @@ def validate_emails(filename, start_row, end_row):
     ws = wb[wb.sheetnames[0]]
     
     # Open the files for writing
-    with open("North_valid_emails.txt", "a") as valid_file, open("North_invalid_emails.txt", "a") as invalid_file:
+    with open("valid_emails.txt", "a") as valid_file, open("invalid_emails.txt", "a") as invalid_file:
         # Iterate through the rows in the worksheet
         for i, row in enumerate(ws.rows):
             # Skip rows that are not in the specified range
